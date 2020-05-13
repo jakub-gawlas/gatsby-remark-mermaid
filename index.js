@@ -16,6 +16,7 @@ async function render(browser, definition, theme, viewport, mermaidOptions) {
 
       try {
         console.log("MERMAID INITIALIZE", definition);
+        throw Error(definition);
         window.mermaid.initialize({
           ...mermaidOptions,
           theme,
